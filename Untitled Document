@@ -1,0 +1,12 @@
+Tim phan mem
+apt-cache search ten_phan_mem
+
+Cai dat phan mem
+sudo apt-get install ten_phan_mem
+
+Go phan mem
+sudo apt-get purge ten_phan_mem
+
+
+Ctrl + All + T => mo terminal
+

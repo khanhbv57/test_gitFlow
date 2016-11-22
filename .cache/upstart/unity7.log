@@ -1,0 +1,13 @@
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+WebGL(0x7feed4973800)::ForceLoseContext
+Vector smash protection is enabled.
+WARN  2016-11-22 11:10:11 unity.iconloader IconLoader.cpp:756 Unable to load icon file:/// at size -1x22: Can't open directory
+WARN  2016-11-22 11:10:24 unity.a11y.expanderview unity-expander-view-accessible.cpp:185 has_focus = 1
+WARN  2016-11-22 11:10:24 unity.a11y.expanderview unity-expander-view-accessible.cpp:185 has_focus = 0
+ERROR 2016-11-22 11:10:24 unityfree <unknown>:0 g_sequence_get: assertion '!is_end (iter)' failed
+ERROR 2016-11-22 11:10:24 unity null <unknown>:0 Unable to get value. NULL row data in DeeSequenceModel@0x1bb76f0 at position 5. The row has probably been removed
+ERROR 2016-11-22 11:10:24 unity null <unknown>:0 Unable to get string. Column 5 in DeeSequenceModel@0x1bb76f0 holds a NULL value in row 5
+WARN  2016-11-22 11:10:24 unity.a11y.expanderview unity-expander-view-accessible.cpp:185 has_focus = 1
+WARN  2016-11-22 11:10:25 unity.a11y.expanderview unity-expander-view-accessible.cpp:185 has_focus = 0
+
+(process:7723): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed

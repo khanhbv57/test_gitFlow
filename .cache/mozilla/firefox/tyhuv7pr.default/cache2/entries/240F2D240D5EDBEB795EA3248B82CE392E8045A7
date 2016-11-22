@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Vietnamese Input Method Engine for IBus using Unikey Engine &mdash; Ubuntu Apps Directory</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" /s>
+        
+    
+<meta property="og:site_name" content="Ubuntu Apps Directory" />
+<meta property="og:title" content="Vietnamese Input Method Engine for IBus using Unikey Engine" />
+<meta property="og:image" content="/assets/images/applications-other-64.png" />
+
+        
+        <link rel="stylesheet" type="text/css" media="all" href="//fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic" />
+        <link rel="stylesheet" type="text/css" href="/cat/combo/?light/css/reset.css&amp;light/css/styles.css&amp;light/css/forms.css&amp;css/webcatalog.css&amp;css/one-global-navigation-core.css"/>
+        
+        
+<link rel="stylesheet" type="text/css" href="/cat/combo/?css/carousel.css"/>
+
+
+    </head>
+    <body class="yui3-skin-sam">
+        <div id="container">
+            <div id="container-inner">
+                <div id="header">
+                    
+                    <h1 id="ubuntu-header"><a href="/">Ubuntu</a></h1>
+                    <h2 id="ubuntu-apps-directory"><a href="/">Apps Directory</a></h2>
+                    
+                    
+                </div>
+                <div class="inner-wrapper">
+                    <div id="menu-search">
+                        
+<div id="search-box">
+    <form id="sitesearch" action="/cat/search/" method="get">
+      <input type="text" maxlength="128" name="q" id="search-box-input"
+             placeholder="Search for an app" title="Add some words that describe the app or the app's name."
+      />
+      <button type="submit" name="op" id="search-box-button"><span>go</span></button>
+    </form>
+</div>
+
+                    </div>
+
+                    <div id="title">
+                        <h1>Vietnamese Input Method Engine for IBus using Unikey Engine</h1>
+                    </div>
+
+
+                    <div id="content" class="clearfix content-area">
+
+    
+    <div id="leftbar">
+        <div class="portlet">
+            <div class="portletheader">Available versions</div>
+            <ul class="portletactions">
+                
+                <li class="item">
+                    
+                      <a href="/cat/applications/saucy/ibus-unikey/">Ubuntu 13.10
+</a>
+                    </li>
+                
+                <li class="item">
+                    
+                      <a href="/cat/applications/raring/ibus-unikey/">Ubuntu 13.04
+</a>
+                    </li>
+                
+                <li class="item">
+                    
+                      <a href="/cat/applications/quantal/ibus-unikey/">Ubuntu 12.10
+</a>
+                    </li>
+                
+                <li class="item">
+                    
+                      <a href="/cat/applications/precise/ibus-unikey/">Ubuntu 12.04
+</a>
+                    </li>
+                
+                <li class="item">
+                    
+                      <a href="/cat/applications/oneiric/ibus-unikey/">Ubuntu 11.10
+</a>
+                    </li>
+                
+                <li class="item">
+                    
+                      <a href="/cat/applications/natty/ibus-unikey/">Ubuntu 11.04
+</a>
+                    </li>
+                
+                <li class="item last">
+                    
+                      <a href="/cat/applications/lucid/ibus-unikey/">Ubuntu 10.04
+</a>
+                    </li>
+                
+            </ul>
+        </div>
+        <div class="portlet emaillinkportlet">
+            <div class="portletheader">Email a link to download</div>
+            <div id='emailForm'>
+                <form action="." method="post" accept-charset="utf-8">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='qeFKa4vi2Hzw4owj9tJ11RgJuvr5wavi' />
+                    <p><label for="id_email">Email:</label> <input id="id_email" name="email" type="text" /></p>
+                    <button type='submit' id='sendButton' class='install-butotn'>Send it</button>
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="portlet recommendedportlet">
+        </div>
+        
+    </div>
+<div class="main-column">
+    <ul id="breadcrumbs">
+
+    <li class="crumb  first">
+        <a href="/cat/">All Apps</a></li>
+
+    <li class="crumb  last">
+        <a href="/cat/applications/saucy/ibus-unikey/">Vietnamese Input Method Engine for IBus using Unikey Engine</a></li>
+
+</ul>
+
+  <div id="sc-mockup">
+    <div class="header">
+      
+
+<div class="star-rating large average">
+  
+  <img src="/assets/images/star-large-1.png" />
+  
+  <img src="/assets/images/star-large-1.png" />
+  
+  <img src="/assets/images/star-large-0.png" />
+  
+  <img src="/assets/images/star-large-0.png" />
+  
+  <img src="/assets/images/star-large-0.png" />
+  
+  
+  <p>4 Ratings</p>
+  
+</div>
+
+
+      <img class="icon64" src="/assets/images/applications-other-64.png"/>
+
+      <h2>Vietnamese Input Method Engine for IBus using Unikey Engine</h2>
+      <p>ibus-unikey</p>
+    </div>
+    <div class="install-bar">
+        <p>Free</p>
+    </div>
+    <div class="description">
+      <div class="screenshot">
+          
+
+<div id="screenshots_placeholder">
+
+    <img src="http://screenshots.ubuntu.com/thumbnail-with-version/ibus-unikey/ignored" />
+
+</div>
+
+      </div>
+      <p><p tabindex="0">IBus is an Intelligent Input Bus. It is a new input framework for Linux OS. It provides full featured and user friendly input method user interface. It also may help developers to develop input method easily.</p><p tabindex="0">Ibus-Unikey is a Vietnamese input method for Ibus Use Unikey engine to process keyevent</p></p>
+      <div class="install-button">
+
+
+
+  <a href="apt://ibus-unikey">
+  
+<img class="fancy-install" width="200" height="60" alt="" src="/assets/images/scbutton-free-200px.png" title="Get it from the Ubuntu Software Centre!">
+  
+  </a>
+
+
+</div>
+    </div>
+    
+    <div class="license">
+      <table>
+        <tr>
+            <th>License:</th>
+            <td>Open Source</td>
+        </tr>
+        
+        <tr>
+            <th>Version:</th>
+            <td>0.6.1</td>
+        </tr>
+        
+      </table>
+    </div>
+    
+    <div class="share">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out Vietnamese Input Method Engine for IBus using Unikey Engine in Ubuntu Apps Directory" data-hashtags="ubuntu" data-url="https://apps.ubuntu.com/cat/applications/ibus-unikey/">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      <g:plusone size="medium"></g:plusone>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+      <div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    </div>
+    <div class="reviews">
+      <h2>Reviews</h2>
+      <div id="reviews_placeholder">
+      <a href="/cat/applications/saucy/ibus-unikey/reviews/">
+          View the reviews for this app</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='viewerPanel'>
+</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer" class="clearfix">
+              
+<div class="footer-div">
+  <p class="footer-title">Legal</p>
+  <ul>
+    <li><a href="/cat/tos/">Terms of Service</a></li>
+    <li><a href="https://one.ubuntu.com/privacy/">Privacy Policy</a></li>
+  </ul>
+</div>
+<div class="footer-div">
+  <p class="footer-title">Connect</p>
+  <ul>
+    <li><a href="https://www.facebook.com/ubuntulinux">Ubuntu on Facebook</a></li>
+    <li><a href="http://twitter.com/#!/ubuntu">Ubuntu on Twitter</a></li>
+    <li><a href="http://planet.ubuntu.com/">Ubuntu Blogs</a></li>
+  </ul>
+</div>
+<div class="footer-div">
+  <p class="footer-title">Support</p>
+  <ul>
+    <li><a href="https://help.ubuntu.com/community/Pay">Customer Support</a>
+  </ul>
+</div>
+<div class="footer-div">
+  <p class="footer-title">Developers</p>
+  <ul>
+    <li><a href="http://developer.ubuntu.com">Add your own application</a></li>
+    <li><a href="https://launchpad.net/ubuntu-webcatalog">Get the code for this site</a></li>
+  </ul>
+</div>
+<div class="footer-div">
+  <p class="footer-title">About</p>
+  <ul>
+    <li><a href="http://www.ubuntu.com">Ubuntu</a></li>
+    <li><a href="http://www.canonical.com">Canonical</a></li>
+  </ul>
+</div>
+
+            </div>
+            <div id="copyright">
+                
+                <a class="logo" href="http://www.ubuntu.com"></a>
+                <p>&copy; 2012 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+                
+                
+            </div>
+        </div>
+
+        
+    
+        <script>
+            YUI_config = {
+                combine: true,
+                comboBase: '/cat/combo/?',
+                root: 'yui/3.10.3/build/'
+            };
+        </script>
+        <script src="/cat/combo/?yui/3.10.3/build/yui/yui-min.js&amp;js/one-global-navigation-templates-min.js&amp;js/one-global-navigation-min.js"></script>
+        <script>
+        YUI().use('one-global-navigation', function(Y) {
+            new Y.U1.GlobalNav();
+        });
+        </script>
+        
+<script src="/cat/combo/?js/carousel.js&amp;js/screenshots.js"></script>
+<script>
+YUI().use('io-base', 'node-base', function (Y) {
+
+    // XXX michaeln 2011-09-16 bug=851660 Autoload further batches of results.
+    var reviews_uri = "/cat/applications/saucy/ibus-unikey/reviews-ajax/";
+    Y.io(reviews_uri, {
+        on: {
+            complete: function(id, response){
+                if (response.status == 200) {
+                    var reviews_html = response.responseText;
+                    var reviews_div = Y.one('#reviews_placeholder');
+                    reviews_div.set("innerHTML", reviews_html);
+                }
+            }
+        }
+    });
+    var recommends_div = Y.one('.portlet.recommendedportlet');
+    if (recommends_div){
+        var recommendations_uri = "/cat/recommends/ibus-unikey/";
+        Y.io(recommendations_uri, {
+            on: {
+                complete: function(id, response){
+                    if (response.status == 200) {
+                        var recommends_html = response.responseText;
+                        recommends_div.set("innerHTML", recommends_html);
+                    }
+                }
+            }
+        });
+    }
+});
+</script>
+
+
+        
+<script type="text/javascript" charset="utf-8">
+    setup_screenshots(0, 'ibus-unikey', '/cat/combo/?', '/cat/applications/screenshots/ibus-unikey/');
+</script>
+
+
+
+        
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-1018242-38']);
+          _gaq.push(['_setDomainName', '.ubuntu.com']);
+          _gaq.push(['_trackPageview']);
+        
+            /* save to www.ubuntu.com (http://www.ubuntu.com) profile */
+          _gaq.push(['b._setAccount', 'UA-1018242-4']);
+          _gaq.push(['b._setDomainName', '.ubuntu.com (http://ubuntu.com)']);
+          _gaq.push(['b._trackPageview']);
+        
+
+          (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        
+    </body>
+</html>
+¡¤ÇúÇÆ      X3$X3$V="´
+X3&s   6    :https://apps.ubuntu.com/cat/applications/ibus-unikey/ necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAUJMIIFBTCCA+2gAwIBAgIQCzHehzbEc+ciRSKPKXjwbTANBgkqhkiG9w0BAQsFADBNMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMScwJQYDVQQDEx5EaWdpQ2VydCBTSEEyIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTYwNTMwMDAwMDAwWhcNMTcwNzA3MTIwMDAwWjBWMQswCQYDVQQGEwJHQjEPMA0GA1UEBxMGTG9uZG9uMRwwGgYDVQQKExNDYW5vbmljYWwgR3JvdXAgTHRkMRgwFgYDVQQDEw9hcHBzLnVidW50dS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCkSMqc9BhzuuKPwbKb+wJkYQli+VaUDqQbqdPX8hrSOffgGpicu4Eqgwva7hTlMA+q9NtSX0esr6NPGDx76aVgbWMojE0KV21flHfQaY7j5nIJUP+KHc52XVdSnya5IxJi1veDA381Xh3Vmkj4NXaQmheqEkanJP7z8v31CVBPRS5OO/T1nsCfqPDHOe6R1i6eOSWiBXgqzOi/3YIa6zNTv5LolZNybL33LMFsO15bMW/gw3tYVd3u2NGr/O1PabTi9Ri1ohKqNJH0UQYY9voC/RvYr2dKzgAlKdcTkEvA3fY7FXxwxcu/1PBt/m/gz8trAOwd7yY9s0O53tEQz4BnAgMBAAGjggHWMIIB0jAfBgNVHSMEGDAWgBQPgGEcgjFh1S8o541GOLQs4cbZ4jAdBgNVHQ4EFgQUtiffJ1XezGDpcnC/snXl91KQHjEwGgYDVR0RBBMwEYIPYXBwcy51YnVudHUuY29tMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwawYDVR0fBGQwYjAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL3NzY2Etc2hhMi1nNS5jcmwwL6AtoCuGKWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9zc2NhLXNoYTItZzUuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMHwGCCsGAQUFBwEBBHAwbjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMEYGCCsGAQUFBzAChjpodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRTSEEyU2VjdXJlU2VydmVyQ0EuY3J0MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAA2VDnKEn98V7Iz6ZhuXyNOV3iZfRotxEGBuS7cuGQMLgcn/GvnkIMZ/KfhOUhUacjJq+J7NHnxCdzsAiQPXmS/kWWj/AIIdS0t2tcmmiWNWQbmeyWD8qOR7AWTHYaz3prZ0ggjDZboAV2+u/qM9KObmDVvOJJirrvakVKep46PnDimycypmAe7P4Rpq4QH1TLU/6bKwB382KizjZIPoA8C6nLQSP5jH77eHegv0llpRSnhgb5m/Di0Xix1XF1FnnnScz6Utd+80rFdQTHeEoyb2V7YqaIOExx0g1sdKRhYjWLmmt8WCwU0TBdKcT8N/05+7v61bTITH7qW5e0iNGVnALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 21 Nov 2016 16:43:10 GMT
+Server: Apache
+Expires: Mon, 21 Nov 2016 16:44:14 GMT
+Vary: Cookie
+Etag: "132a505e480a9779f2b95e8800962a90"
+Cache-Control: max-age=600
+Last-Modified: Mon, 21 Nov 2016 16:34:14 GMT
+Content-Length: 12322
+Content-Type: text/html; charset=utf-8
+X-Cache: MISS from papeda.canonical.com
+X-Cache-Lookup: HIT from papeda.canonical.com:3128
+Via: 1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)
+Strict-Transport-Security: max-age=2592000
+X-Pad: avoid browser bug
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 35 predictor::https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic 1,2,1479746588,0 predictor::https://apps.ubuntu.com/cat/combo/?light/css/reset.css&light/css/styles.css&light/css/forms.css&css/webcatalog.css&css/one-global-navigation-core.css 1,2,1479746588,0 predictor::https://apps.ubuntu.com/cat/combo/?css/carousel.css 1,2,1479746588,0 predictor::https://apps.ubuntu.com/assets/images/star-large-1.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/images/star-large-0.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/images/applications-other-64.png 1,1,1479746053,0 predictor::http://screenshots.ubuntu.com/thumbnail-with-version/ibus-unikey/ignored 1,2,1479746588,0 predictor::https://apps.ubuntu.com/assets/images/scbutton-free-200px.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/cat/combo/?yui/3.10.3/build/yui/yui-min.js&js/one-global-navigation-templates-min.js&js/one-global-navigation-min.js 1,2,1479746588,0 predictor::https://apps.ubuntu.com/cat/combo/?js/carousel.js&js/screenshots.js 1,2,1479746588,0 predictor::https://apps.ubuntu.com/assets/light/images/body_bg.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/light/images/header_bg.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/light/images/header_logo.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/light/images/search_submit_bg_2.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/images/breadcrumbs_bg.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/light/images/bullet.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/images/sc-gradient.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/images/sc-clouds.png 1,1,1479746053,0 predictor::https://platform.twitter.com/widgets.js 1,2,1479746588,0 predictor::https://apis.google.com/js/plusone.js 1,2,1479746588,0 predictor::https://connect.facebook.net/en_US/all.js#xfbml=1 1,2,1479746588,0 predictor::https://apps.ubuntu.com/assets/light/images/footer_logo.png 1,1,1479746053,0 predictor::https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.vi.Tb-e9HmKKYU.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCO0e4UR1kH4EvoieC59phhiUMsKxQ/cb=gapi.loaded_0 1,2,1479746588,0 predictor::https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.vi.Tb-e9HmKKYU.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCO0e4UR1kH4EvoieC59phhiUMsKxQ/cb=gapi.loaded_1 1,2,1479746588,0 predictor::https://www.facebook.com/impression.php/f210c6a5da133c2/?lid=115&payload=%7B%22source%22%3A%22jssdk%22%7D 1,1,1479746053,0 predictor::https://apps.ubuntu.com/cat/combo/?yui/3.10.3/build/template-micro/template-micro-min.js&yui/3.10.3/build/array-extras/array-extras-min.js 1,2,1479746588,0 predictor::https://ssl.google-analytics.com/ga.js 1,2,1479746588,0 predictor::https://platform.twitter.com/js/button.5546439b5d743401ca910708312f6e81.js 1,2,1479746588,0 predictor::https://apps.ubuntu.com/cat/combo/?yui/3.10.3/build/querystring-stringify-simple/querystring-stringify-simple-min.js&yui/3.10.3/build/io-base/io-base-min.js 1,2,1479746588,0 predictor::https://apps.ubuntu.com/cat/combo/?yui/3.4.0/build/widget-base/assets/skins/sam/widget-base.css&yui/3.4.0/build/cssbutton/cssbutton-min.css&yui/3.4.0/build/widget-modality/assets/skins/sam/widget-modality.css&yui/3.4.0/build/widget-stack/assets/skins/sam/widget-stack.css&yui/3.4.0/build/panel/assets/skins/sam/panel.css 1,2,1479746588,0 predictor::https://apps.ubuntu.com/assets/images/star-small-1.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/assets/images/star-small-0.png 1,1,1479746053,0 predictor::https://apps.ubuntu.com/cat/combo/?yui/3.4.0/build/attribute-core/attribute-core-min.js&yui/3.4.0/build/attribute-observable/attribute-observable-min.js&yui/3.4.0/build/attribute-extras/attribute-extras-min.js&yui/3.4.0/build/base-core/base-core-min.js&yui/3.4.0/build/base-observable/base-observable-min.js&yui/3.4.0/build/event-tap/event-tap-min.js&yui/3.4.0/build/button-core/button-core-min.js&yui/3.4.0/build/button-plugin/button-plugin-min.js 1,2,1479746588,0 request-Cookie rx4gUVpGwS5tNh69jMWrhTNW9Fo= predictor::https://www.facebook.com/impression.php/f1a4b5cffa64908/?lid=115&payload=%7B%22source%22%3A%22jssdk%22%7D 1,1,1479746588,0 predictor::https://apps.ubuntu.com/assets/images/subnav_active_bg.png 1,1,1479746588,0   0"

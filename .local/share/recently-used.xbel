@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///media/khanh/72BC4041BC3FFDDB/Users/khanh/Downloads/UniKeyNT.exe" added="2016-11-21T16:31:17Z" modified="2016-11-21T16:31:17Z" visited="2016-11-21T16:31:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ms-dos-executable"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;file-roller %U&apos;" modified="2016-11-21T16:31:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/khanh/72BC4041BC3FFDDB/Users/khanh/Downloads/TKB%20(1).doc" added="2016-11-21T16:31:29Z" modified="2016-11-21T16:31:40Z" visited="2016-11-21T16:31:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/msword"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --writer %U&apos;" modified="2016-11-21T16:31:29Z" count="1"/>
+          <bookmark:application name="LibreOffice 5.1" exec="&apos;soffice %u&apos;" modified="2016-11-21T16:31:40Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/khanh/Downloads/unikey42RC4-140823-win64.zip" added="2016-11-21T16:33:24Z" modified="2016-11-21T16:33:27Z" visited="2016-11-21T16:33:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-11-21T16:33:24Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2016-11-21T16:33:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/khanh/Downloads/sublime-text_build-3126_amd64.deb" added="2016-11-21T17:47:41Z" modified="2016-11-21T18:16:56Z" visited="2016-11-21T17:47:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-11-21T17:47:41Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;gnome-software --local-filename=%f&apos;" modified="2016-11-21T18:16:56Z" count="2"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2016-11-21T18:16:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/khanh/Downloads/sublime-text_build-3126_amd64(1).deb" added="2016-11-21T18:15:53Z" modified="2016-11-21T18:15:53Z" visited="2016-11-21T18:15:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2016-11-21T18:15:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/khanh/Downloads/sublime-text_build-3126_amd64/data.tar.lzma" added="2016-11-21T18:16:09Z" modified="2016-11-21T18:16:10Z" visited="2016-11-21T18:16:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-lzma-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;file-roller %U&apos;" modified="2016-11-21T18:16:09Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2016-11-21T18:16:10Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/khanh/Untitled%20Document" added="2016-11-21T18:24:48Z" modified="2016-11-21T18:24:50Z" visited="2016-11-21T18:24:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2016-11-21T18:24:48Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2016-11-21T18:24:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/khanh/01CF4E6CBE0F6C30/OOP2016/lenhgit.txt" added="2016-11-22T03:41:08Z" modified="2016-11-22T03:41:10Z" visited="2016-11-22T03:41:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2016-11-22T03:41:08Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2016-11-22T03:41:10Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

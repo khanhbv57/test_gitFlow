@@ -1,0 +1,300 @@
+/* js/carousel.js */
+YUI.add('uwc-carousel', function(Y) {
+    Y.namespace('uwc');
+    function Carousel(config){
+        Carousel.superclass.constructor.apply(this, arguments);
+    }
+    Y.extend(Carousel, Y.Base, {
+        initializer: function(cfg) {
+            var nodeListSlides,
+                nodeCarousel,
+                nodeContainer = this.get("nodeContainer"),
+                carouselClassName = this.get("carouselClassName");
+            this.interval = null;
+            this.curSlide = 0;
+            nodeListSlides = this.getCarouselNodeList();
+            this.nodeCarousel = nodeContainer.one("."+ carouselClassName);
+            // Ensure Carousel is position: relative
+            this.nodeCarousel.setStyle("position", "relative");
+            this.numSlides = nodeListSlides.size();
+            // init animation
+            this.caroAnim = new Y.Anim({
+                node: this.nodeCarousel
+            });
+            this.caroAnim.set("duration", this.get("slideAnimDuration"));
+            this.caroAnim.set("easing", this.get("slideEasing"));
+            this.caroAnim.on("end", function(){
+                this.updatePagination();
+            }, this);
+
+            // Create next/prev
+            this.generateControls();
+            // Create Paging
+            this.generatePagination();
+            this.updatePagination();
+            // We are ready display everything.
+            this.nodeCarousel.removeClass("hidden");
+            if (this.get("autoPlay")) {
+                this.autoPlay();
+            }
+        },
+        getCarouselNodeList: function() {
+            var nodeContainer = this.get("nodeContainer"),
+                carouselClassName = this.get("carouselClassName");
+            return nodeContainer.all("." + carouselClassName + " li");
+        },
+        updatePagination: function() {
+            var nodeContainer = this.get("nodeContainer"),
+                paginationListItems;
+            paginationListItems = nodeContainer.all(".pagination li a");
+            paginationListItems.each(function(a){
+                var nodeClassName = a.get("className");
+                if (parseInt(nodeClassName.replace("p-", ""), 10) === this.curSlide) {
+                    a.addClass("active");
+                } else {
+                    a.removeClass("active");
+                }
+            }, this);
+        },
+        generatePagination: function() {
+            var pageText = 'Page',
+                nodeContainer = this.get("nodeContainer"),
+                ol = document.createElement('ol'),
+                li, a, sp, txt;
+
+            ol.className = "pagination";
+            for (var i=0, j=this.numSlides; i < j; i++){
+                li = document.createElement('li');
+                a = document.createElement('a');
+                sp = document.createElement('span');
+                a.href = '#';
+                txt = document.createTextNode(pageText+(i+1));
+                sp.appendChild(txt);
+                a.appendChild(sp);
+                a.className = 'p-'+i;
+                li.appendChild(a);
+                ol.appendChild(li);
+            }
+            nodeContainer.append(ol);
+            olNode = Y.one(ol);
+            olNode.on("click", function(e){
+                var targetClass;
+                e.preventDefault();
+                if (this.caroAnim.get("running") === false) {
+                    if (e && this.autoPlayTimer) {
+                        clearInterval(this.autoPlayTimer);
+                    }
+                    targetClass = e.target.get("className");
+                    this.gotoSlide(parseInt(targetClass.replace("p-", ""), 10));
+                }
+            }, this);
+            // Center pagination
+            olNode.setStyle('left', parseInt((
+                parseInt(olNode.get('parentNode').getComputedStyle('width')) -
+                parseInt(olNode.getComputedStyle('width'))) / 2) + 'px');
+        },
+        generateControls: function() {
+            var controlsContainer = this.get("controlsContainer");
+            if (controlsContainer) {
+                var prev = Y.Node.create('<a href="#" class="prev"><span>Previous Slide</span></a>'),
+                    next = Y.Node.create('<a href="#" class="next"><span>Next Slide</span></a>');
+                next.on("click", this.next, this);
+                prev.on("click", this.prev, this);
+                controlsContainer.appendChild(prev);
+                controlsContainer.appendChild(next);
+            }
+        },
+        advance: function(e, val){
+            if (e) {
+                e.preventDefault();
+            }
+            if (e && this.autoPlayTimer) {
+                clearInterval(this.autoPlayTimer);
+            }
+            if (this.caroAnim.get("running") === true) {
+                return;
+            }
+            this.gotoSlide(val);
+        },
+        next: function(e){
+            this.advance(e, this.curSlide + 1);
+        },
+        prev: function(e){
+            this.advance(e, this.curSlide - 1);
+        },
+        gotoSlide: function(nSlideIndex, duration) {
+            var xOffSet, slideWidth;
+            slideWidth = parseInt(this.nodeCarousel.one("li").getStyle("width"), 10);
+            duration = (duration === 0) ? duration : (duration || this.get("slideAnimDuration"));
+            this.nSlideIndex = nSlideIndex;
+            if (nSlideIndex < 0) {
+                this.animateTo(-(slideWidth * (this.numSlides-1)), duration);
+                this.curSlide = this.numSlides - 1;
+            } else if (nSlideIndex >= (this.numSlides)) {
+                this.animateTo(0, duration);
+                this.curSlide = 0;
+            } else {
+                xOffSet = -slideWidth * nSlideIndex;
+                this.animateTo(xOffSet, duration);
+                this.curSlide = nSlideIndex;
+            }
+
+        },
+        autoPlay: function() {
+            var that = this;
+            this.autoPlayTimer = setInterval(function(){
+               that.next();
+            }, that.get("slideAnimInterval"));
+        },
+        animateTo: function(value, duration) {
+            var origDuration;
+            if (duration === 0) {
+                this.nodeCarousel.setStyle("left", value);
+            } else {
+                if (duration) {
+                    origDuration = this.caroAnim.get("duration");
+                    this.caroAnim.set("duration", duration);
+                }
+                this.caroAnim.set("to", { "left": value });
+                this.caroAnim.run();
+                this.caroAnim.set("duration", origDuration);
+            }
+        }
+    }, {
+        NAME: "carousel",
+        ATTRS: {
+            carouselClassName: { value: "carouselol"},
+            containerHeight: { value: null },
+            containerWidth: { value: null },
+            nodeContainer: {
+                setter: function(sel) {
+                    var n = Y.one(sel);
+                    if (!n) {
+                        Y.log('UWC:Carousel - invalid selector provided: ' + sel);
+                    }
+                    return n;
+                }
+            },
+            controlsContainer: {
+                setter: function(sel) {
+                    return Y.one(sel);
+                }
+            },
+            slideAnimDuration: { value: 1 },
+            slideAnimInterval: { value: 5000 },
+            slideEasing: { value: Y.Easing.easeBoth },
+            autoPlay: { value: true }
+        }
+    });
+    Y.uwc.Carousel = Carousel;
+}, '0.0.1', {
+    requires: ['base', 'node', 'anim', 'event','panel', 'transition']
+});
+
+/* js/screenshots.js */
+var setup_screenshots = function(num_screenshots, appName, combo_path, ajax_uri) {
+    YUI({combine: true, comboBase: combo_path, root: 'yui/3.4.0/build/'}).use('io-base','uwc-carousel', function(Y) {
+        if (num_screenshots == 0) {
+            var uri = ajax_uri;
+            function complete(id, obj) {
+                var json = JSON.parse(obj.responseText);
+                num_screenshots = json.length;
+                if (num_screenshots > 0) {
+                    var content_div = document.createElement('div');
+                    content_div.className = 'carousel-wrapper';
+                    var carousel_div = document.createElement('div');
+                    carousel_div.id = 'screenshots-carousel';
+                    carousel_div.className = 'carousel';
+                    content_div.appendChild(carousel_div)
+                    var ol = document.createElement('ol')
+                    ol.className = 'carouselol';
+                    carousel_div.appendChild(ol);
+                    for (var i in json) {
+                        var url = json[i];
+                        var li = document.createElement('li');
+                        li.className = 'slide';
+                        ol.appendChild(li);
+                        var img = document.createElement('img');
+                        img.src = url;
+                        li.appendChild(img);
+                    }
+                    var screenshots_div = Y.one('#screenshots_placeholder');
+                    screenshots_div.get('childNodes').remove();
+                    screenshots_div.appendChild(content_div);
+                    setup_carousel();
+                    setupViewerPanel();
+                };
+            };
+            Y.on('io:complete', complete, Y);
+            var request = Y.io(uri);
+        } else {
+            setup_carousel();
+            setupViewerPanel();
+        }
+
+        function setupViewerPanel() {
+            if (num_screenshots == 0) {
+                return;
+            }
+            var panel = new Y.Panel({
+                width: 860,
+                centered: true,
+                zIndex: 50,
+                modal: true,
+                visible: false,
+                render: false,
+                buttons: [
+                    {
+                        value: 'Close',
+                        section: 'footer',
+                        action: function(e) {
+                            e.preventDefault();
+                            panel.hide();
+                        }
+                    }
+                ]
+            });
+            var bb = panel.get('boundingBox');
+            var slides = Y.all('.slide img');
+            slides.on("click", function(e){
+                    var slide = e.currentTarget;
+                    var url = slide.getAttribute('src');
+                    url = url.replace('/225x170/', '/800x800/');
+                    heading = appName + ' - screenshot ';
+                    panel.setStdModContent(Y.WidgetStdMod.HEADER, heading);
+                    panel.setStdModContent(Y.WidgetStdMod.BODY, '<img width="800" src="' + url +'"/>');
+                    panel.render('#viewerPanel');
+                    panel.show();
+                }, this);
+        }
+
+        function setup_carousel() {
+            if (num_screenshots < 2) {
+                return;
+            }
+            var caro = new Y.uwc.Carousel({
+                nodeContainer: "#screenshots-carousel",
+                controlsContainer: "#nocontrols",
+                autoPlay: false,
+                slideAnimDuration: 0.6
+            });
+            Y.all('.slide').removeClass('disabled');
+        }
+    });
+}
+
+Ï¢d           X3$ ="«X3%¸   D    :https://apps.ubuntu.com/cat/combo/?js/carousel.js&js/screenshots.js security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAUJMIIFBTCCA+2gAwIBAgIQCzHehzbEc+ciRSKPKXjwbTANBgkqhkiG9w0BAQsFADBNMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMScwJQYDVQQDEx5EaWdpQ2VydCBTSEEyIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTYwNTMwMDAwMDAwWhcNMTcwNzA3MTIwMDAwWjBWMQswCQYDVQQGEwJHQjEPMA0GA1UEBxMGTG9uZG9uMRwwGgYDVQQKExNDYW5vbmljYWwgR3JvdXAgTHRkMRgwFgYDVQQDEw9hcHBzLnVidW50dS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCkSMqc9BhzuuKPwbKb+wJkYQli+VaUDqQbqdPX8hrSOffgGpicu4Eqgwva7hTlMA+q9NtSX0esr6NPGDx76aVgbWMojE0KV21flHfQaY7j5nIJUP+KHc52XVdSnya5IxJi1veDA381Xh3Vmkj4NXaQmheqEkanJP7z8v31CVBPRS5OO/T1nsCfqPDHOe6R1i6eOSWiBXgqzOi/3YIa6zNTv5LolZNybL33LMFsO15bMW/gw3tYVd3u2NGr/O1PabTi9Ri1ohKqNJH0UQYY9voC/RvYr2dKzgAlKdcTkEvA3fY7FXxwxcu/1PBt/m/gz8trAOwd7yY9s0O53tEQz4BnAgMBAAGjggHWMIIB0jAfBgNVHSMEGDAWgBQPgGEcgjFh1S8o541GOLQs4cbZ4jAdBgNVHQ4EFgQUtiffJ1XezGDpcnC/snXl91KQHjEwGgYDVR0RBBMwEYIPYXBwcy51YnVudHUuY29tMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwawYDVR0fBGQwYjAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL3NzY2Etc2hhMi1nNS5jcmwwL6AtoCuGKWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9zc2NhLXNoYTItZzUuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMHwGCCsGAQUFBwEBBHAwbjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMEYGCCsGAQUFBzAChjpodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRTSEEyU2VjdXJlU2VydmVyQ0EuY3J0MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAA2VDnKEn98V7Iz6ZhuXyNOV3iZfRotxEGBuS7cuGQMLgcn/GvnkIMZ/KfhOUhUacjJq+J7NHnxCdzsAiQPXmS/kWWj/AIIdS0t2tcmmiWNWQbmeyWD8qOR7AWTHYaz3prZ0ggjDZboAV2+u/qM9KObmDVvOJJirrvakVKep46PnDimycypmAe7P4Rpq4QH1TLU/6bKwB382KizjZIPoA8C6nLQSP5jH77eHegv0llpRSnhgb5m/Di0Xix1XF1FnnnScz6Utd+80rFdQTHeEoyb2V7YqaIOExx0g1sdKRhYjWLmmt8WCwU0TBdKcT8N/05+7v61bTITH7qW5e0iNGVnALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 21 Nov 2016 16:40:00 GMT
+Server: Apache
+Etag: "86e6e439892d11ad7009c7c000d031b6"
+Expires: Mon, 21 Nov 2016 16:50:00 GMT
+Cache-Control: max-age=600
+Last-Modified: Mon, 21 Nov 2016 16:40:00 GMT
+Content-Length: 11273
+Content-Type: text/javascript
+Age: 191
+X-Cache: HIT from papeda.canonical.com
+X-Cache-Lookup: HIT from papeda.canonical.com:3128
+Via: 1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)
+Strict-Transport-Security: max-age=2592000
+ uncompressed-len 0   ,	

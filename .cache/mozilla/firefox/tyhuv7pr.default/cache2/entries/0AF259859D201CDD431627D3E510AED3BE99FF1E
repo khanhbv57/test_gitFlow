@@ -1,0 +1,1049 @@
+/* light/css/reset.css */
+/* Don't forget to set a foreground and background color
+ on the 'html' or 'body' element! */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+a img, :link img, :visited img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+}
+
+i, em {
+    font-style: italic;
+}
+dl {
+    margin-bottom: 16px;
+}
+
+
+/* light/css/styles.css */
+body {
+    font-family: 'Ubuntu Beta', UbuntuBeta, Ubuntu, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, sans-serif;
+    color: #333;
+    background: white url(/assets/light/images/body_bg.png);
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+#container {
+    background: #f7f6f5;
+    margin: 0 auto;
+    padding: 0px;
+    width: 980px;
+}
+#container-inner {
+    background-color: #fff;
+}
+#header, #container-inner {
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+#header {
+    background: #dd4814 url(/assets/light/images/header_bg.png) top left repeat-x;
+    height: 64px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#menu-search {
+    height: 40px;
+}
+#search-box {
+    margin-left: 720px;
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-box-shadow: #bbb 0px 0px 2px;
+    -webkit-box-shadow: #bbb 0px 0px 2px;
+    background-color: #f2f2f2;
+    width: 224px;
+    height: 40px;
+}
+#search-box-input {
+    float: left;
+    width: 172px;
+    height: 20px;
+    border-color: #d1d1d1;
+    border-style: solid none none solid;
+    border-width: 1px medium medium 1px;
+    margin: 8px 0 0 8px;
+    padding: 1px;
+    font-size: 14px;
+}
+#search-box-button {
+    float: left;
+    background: url(/assets/light/images/search_submit_bg_2.png) transparent;
+    width: 24px;
+    height: 24px;
+    margin: 8px 0 0 8px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+#search-box-button:hover {
+    background-position: 0 -23px;
+}
+#search-box-button:active {
+    background-position: 0 -46px;
+}
+
+#search-box button span {
+    position: absolute;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#title {
+    padding: 18px 0px;
+}
+
+#content {
+    padding: 24px 240px 32px 160px;
+    margin: 0 16px 64px;
+    width: 544px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+#end-content {
+    clear: both;
+}
+
+.box-944 {
+    background: #ffffff;
+    width: 944px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.box-304 {
+    background: #ffffff;
+    width: 304px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.box-624 {
+    background: #ffffff;
+    width: 304px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.content-box {
+    width: 912px;
+    padding: 16px;
+}
+
+#copyright {
+    color: #aea79f;
+    font-size: 12px;
+    margin: 0 16px;
+    padding: 0;
+    height: 40px;
+    line-height: 14px;
+}
+#copyright p {
+    display: inline;
+}
+#copyright a.logo {
+    background-image: url(/assets/light/images/footer_logo.png);
+    width: 118px;
+    height: 27px;
+    display: block;
+    float: right;
+}
+#ubuntu-header {
+    background-image: url(/assets/light/images/header_logo.png);
+    background-repeat: no-repeat;
+    float: left;
+    height: 32px;
+    margin: 0 0 0 20px;
+    position: relative;
+    top: 14px;
+    width: 117px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+#ubuntu-header a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+h2#ubuntu-apps-directory {
+    margin: 0;
+    padding: 0;
+}
+#ubuntu-apps-directory a {
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: lowercase;
+    position: relative;
+    top: 25px;
+    left: 5px;
+}
+.inner-wrapper {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 3px #C9C9C9;
+    padding: 0 20px;
+}
+
+#footer {
+    padding-top: 16px;
+}
+#footer * {
+    font-size: 12px;
+    line-height: 16px;
+}
+#footer p {
+    margin: 0;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #aea79f;
+}
+#footer p.footer-title {
+    font-weight: bold;
+}
+#footer .footer-div {
+    height: 102px;
+    width: 144px;
+    float: left;
+    margin-left: 16px;
+}
+#footer .last-div {
+    margin-right: 16px;
+}
+#footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer li {
+    margin: 0;
+    padding: 2px 0;
+    border-bottom: 1px dotted #aea79f;
+}
+
+#main-menu {
+    list-style: none;
+    margin: 0;
+    margin-left: 16px;
+    padding: 0;
+    height: 100%;
+    background: url(/assets/light/images/topnav_divider.png) no-repeat scroll left top transparent !important;
+}
+#main-menu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 64px;
+    font-size: 14px;
+    line-height: 16px;
+    background: url(/assets/light/images/topnav_divider.png) no-repeat scroll right top transparent !important;
+}
+#main-menu a {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 24px 8px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: #000 0px 1px;
+}
+#main-menu a:hover, #main-menu li.active a {
+    background: url(/assets/light/images/topnav_active_bg.png) no-repeat right top transparent !important;
+}
+
+.sidebar p {
+    background: transparent url(/site_media/light/images/darrow.png) no-repeat center right;
+    width: 180px;
+}
+h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+}
+h3 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+}
+h3.link-other {
+    color: #333;
+}
+h3.link-services {
+    color: #fff;
+}
+h4 {
+    font-size: 14px;
+    line-height: 16px;
+}
+h4.link-news {
+    color: #ef5a29;
+}
+h4.link-ubuntu {
+    color: #dd4814;
+}
+h4.partners {
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+}
+h5 {
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+}
+p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #dd4814;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.anchor-button {
+	-moz-background-inline-policy: continous;
+	-moz-border-radius: 4px;
+	background: url(/assets/light/images/button_background.png) no-repeat center;
+	display: block;
+	font-size: 20px;
+	color: #FFFFFF;
+	height: 27px;
+	line-height: 27px;
+	width: 220px;
+	margin: 0 auto;
+	padding: 13px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+a.anchor-button:visited {
+	color: #FFFFFF;
+}
+a.anchor-button:hover {
+	background: url(/assets/light/images/button_background_hover.png) no-repeat center;
+	text-decoration: none;
+}
+div.footer-div a {
+    color: #333;
+}
+
+ul {
+    margin-bottom: 16px;
+    list-style-image: url(/assets/light/images/bullet.png);
+}
+ul li {
+    margin-bottom: 8px;
+    line-height: 16px;
+}
+ul li:last-child {
+    margin-bottom: 0px;
+}
+
+p.call-to-action {
+    color: #333;
+}
+p.case-study {
+    color: #333;
+}
+p.highlight {
+    font-size: 16px;
+    line-height: 20px;
+}
+p.introduction {
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+}
+p.services {
+    color: #fff;
+}
+p.small-text {
+    color: #333;
+    font-size: 12px;
+}
+
+.newsfeed {
+    background: url(/assets/light/images/news_feed_bg.png) no-repeat scroll right top transparent;
+    padding: 0 20px 0 0;
+}
+
+/* Clearing floats without extra markup
+Based on How To Clear Floats Without Structural Markup by PiE
+[http://www.positioniseverything.net/easyclearing.html] */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}  /* for IE/Mac */
+
+/* Tabular guidelines */
+#content table {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+h3.tableheader, #content th {
+    background: #aea79e;
+    color: white;
+    margin: 0;
+    padding: 8px;
+}
+
+#content th {
+    font-weight: bold;
+}
+
+#content td.subheader {
+    background: #dfdcd9;
+    color: black;
+    margin: 0;
+    padding: 8px;
+    border: 0;
+}
+
+#content td {
+    padding: 8px;
+    line-height: 16px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+#content td.fixedtd {
+    width: 80px;
+}
+/* End tabular guidelines */
+
+/* light/css/forms.css */
+/* Form related styling */
+input, select {
+    /* Override mozilla's default form css inherited from the system */
+    font-size: 100%;
+}
+
+/* css/webcatalog.css */
+#content {
+    padding: 0 0 32px;
+    margin: 0 0 64px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -khtml-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    width: 912px;
+}
+/* Terms of Service */
+#tos {
+    background: white;
+    padding: 32px;
+    border: 1px solid #ccc;
+}
+#tos ol {
+    padding-top: 8px;
+    list-style: decimal;
+}
+#tos ol ol {
+    list-style: lower-alpha;
+}
+#tos li {
+    padding-bottom: 8px;
+}
+#tos p {
+    padding-top: 8px;
+}
+/* Software centre mockup */
+#sc-mockup {
+    background: white url("/assets/images/sc-gradient.png") repeat-x top;
+    -moz-box-shadow: #bbb 2px 2px 5px 1px;
+    -webkit-box-shadow: #bbb 2px 2px 5px 1px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    width: 684px;
+    float: right;
+}
+
+#sc-mockup h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4c4c4c;
+    padding: 0;
+}
+#sc-mockup .header {
+    padding: 32px 24px 0;
+    background: transparent url("/assets/images/sc-clouds.png") no-repeat top right;
+    height: 98px;
+}
+#sc-mockup .header img, #sc-mockup .header embed {
+    float: left;
+    margin-right: 24px;
+}
+.license th {
+    width: 50px;
+}
+.share {
+    padding: 16px;
+}
+.share .fb-like {
+    vertical-align: top;
+}
+.description {
+    padding: 42px 16px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.description p {
+    white-space: pre-wrap;
+    font-size:14px;
+}
+.description ul {
+    list-style: disc;
+    padding-left: 16px;
+}
+.screenshot {
+    float: right;
+    margin: 0 16px;
+}
+
+.screenshot img {
+    max-width: 225px;
+    max-height: 170px;
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.noscreenshot {
+    padding: 41px 32px;
+    border: 1px solid white;
+    outline: 1px solid #ada9a5;
+    background: #f2f1f0;
+    color: #ada9a5;
+}
+
+#sc-mockup .license {
+    padding: 0 58px;
+    clear: both;
+    padding-top: 40px;
+}
+
+#sc-mockup .license th {
+    color: #adaaa6;
+    text-align: right;
+    background: transparent;
+}
+
+#sc-mockup .license td {
+    border: 0;
+}
+
+/* End software centre mockup */
+
+/* Left sidebar */
+#leftbar {
+    float: left;
+    width: 206px;
+}
+
+.portlet {
+    margin-bottom: 32px;
+}
+.portletheader {
+    padding: 10px 8px;
+    font-size: 14px;
+    background: #DD4814;
+    color: white;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -khtml-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+ul.portletactions {
+    font-size: 12px;
+    list-style-image: none;
+}
+
+ul.portletactions li {
+    border-bottom: 1px dotted gray;
+    margin: 0;
+}
+
+ul.portletactions li a, ul.portletactions li span {
+    padding: 4px 8px 4px 4px;
+    display: block;
+    color: black;
+    line-height: 24px;
+}
+
+ul.portletactions li.active span, ul.portletactions a:hover {
+    background: transparent url("/assets/images/subnav_active_bg.png");
+    color: #E24912;
+    text-decoration: none;
+}
+/* End left sidebar */
+
+.main-column {
+    width: 684px;
+    float: right;
+}
+#application-list td {
+    padding: 8px 0;
+    vertical-align: top;
+}
+#application-list tr {
+    min-height: 36px;
+}
+#application-list .app-icon img {
+    margin-right: 10px;
+}
+#application-list .app-description {
+    width: 634px;
+}
+#application-list p {
+    margin: 0;
+}
+#application-list h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.department {
+    width: 206px;
+}
+
+.department h3 {
+    line-height: 24px;
+}
+
+.department h3 a {
+    line-height: 24px;
+}
+
+#search-box.main {
+    margin: auto;
+    width: 380px;
+    border: 1px solid #AEA79F;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    box-shadow: 0 0 0 0;
+}
+#search-container h3 {
+    float: left;
+    line-height: 26px;
+    margin-right: 32px;
+}
+
+#search-box.main #search-box-input {
+    width: 320px;
+}
+.install-bar {
+    background: #B1CEE6;
+    border: 1px solid #639BCE;
+    height: 28px;
+    margin: 0 16px;
+    padding: 4px;
+}
+.install-bar p {
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 28px;
+}
+.dept-icon {
+    float:left;
+    width:32px;
+    height:24px;
+}
+
+.icon64 {
+    width: 64px;
+    height: 64px;
+}
+.icon32 {
+    width: 32px;
+    height: 32px;
+}
+.star-rating.small {
+    width: 100px;
+}
+.star-rating.average {
+    float: right;
+    display: block;
+}
+.star-rating.large {
+    width: 175px;
+}
+#sc-mockup .star-rating img {
+    margin: 0;
+    float: none;
+}
+.reviews {
+    padding: 16px;
+}
+.review {
+    margin: 8px 8px 16px 8px;
+}
+.review .star-rating {
+    display: inline;
+    margin-right: 8px;
+}
+.review p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.review .meta {
+    float: right;
+    color: #adaaa6;
+}
+.review p.usefulness {
+    font-size: 12px;
+}
+
+/* Breadcrumbs styles */
+#breadcrumbs {
+    height: 25px;
+}
+
+#breadcrumbs li {
+    list-style: none;
+    float: left;
+    line-height: 25px;
+    padding: 0 20px 0 7px;
+    background: transparent url("/assets/images/breadcrumbs_bg.png") no-repeat top right;
+    border-style: solid;
+    border-color: #928d8a;
+    border-width: 1px 0;
+}
+
+#breadcrumbs li a {
+    color: #444;
+}
+
+#breadcrumbs li.first {
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -khtml-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    border-width: 1px 0 1px 1px;
+}
+
+#breadcrumbs li.last {
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    -khtml-border-radius: 0 4px 4px 0;
+    border-radius:0 4px 4px 0 ;
+    border-width: 1px 1px 1px 0;
+    background-position: top left;
+    padding-right: 7px;
+}
+
+#breadcrumbs li.first.last {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+/* End breadcrumbs style */
+
+.paginator p {
+    text-align: center;
+}
+.paginator .arrow a {
+    font-size: 16px;
+}
+
+.paginator p, .paginator a {
+    font-size: 14px;
+}
+
+.exhibit-container {
+    width: 912px;
+    display: none;
+    overflow: hidden;
+    height: 200px;
+}
+
+.exhibits-widget .enabled {
+    display: block;
+}
+
+#sendButton {
+    margin-left: 107px;
+    margin-bottom: 3px;
+    width: 80px;
+}
+form ul {
+    list-style: none;
+}
+ul.errorlist {
+    margin-bottom: 0px;
+    list-style: none;
+}
+ul.errorlist li {
+    color: #de3e25;
+    font-weight: bold;
+    border-bottom: none;
+    margin-left: 7px;
+}
+p.error {
+    background-color: #df382b;
+}
+.emaillinkportlet {
+    margin-top: 64px;
+    border-bottom: 1px dotted gray;
+}
+
+.emaillinkportlet .portletheader, .debtags .portletheader,
+.versions .portletheader, .recommendedportlet .portletheader {
+    background: #bbb;
+}
+.portletactions .star-rating {
+    padding-top: 10px;
+}
+
+#emailForm {
+    margin-top: 8px;
+}
+#emailForm label {
+    display: inline;
+    padding-bottom: 3px;
+}
+#emailForm input#id_email {
+    width: 120px;
+}
+
+.message {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 24px;
+}
+.warning {
+    background-color: #f2cfce;
+    color: #4c4c4c;
+}
+p.success {
+    background: #41b241 url("/assets/images/success_icon.png") no-repeat 3px;
+}
+#message_text {
+    float: right;
+    line-height: 60px;
+    padding-right: 5px;
+}
+.debtags {
+    padding-top: 12px;
+}
+.debtags li {
+    list-style-type: circle;
+    margin-left: 16px;
+}
+
+#search-container {
+    background: url("/assets/images/pattern-featured.gif") repeat scroll 0 0 #ebe9e7;
+    margin: 28px 0 30px 222px;
+    padding: 5px;
+    border: 1px solid #aea79f;
+    border-radius: 4px 4px 4px 4px;
+    height: 43px;
+}
+
+h4.not-found {
+    font-size: 32px;
+    margin: 32px;
+    color: #888;
+}
+
+div.videos iframe {
+    width: 100%;
+    height: 225px;
+    margin: 16px;
+}
+
+/* css/one-global-navigation-core.css */
+.u-nav-global,
+.u-nav-global-nav,
+.u-nav-global ul,
+.u-nav-global li,
+.u-nav-global a,
+.u-nav-global i {
+    font: 300 normal 12px/19px ubuntu, sans-serif;
+}
+.u-nav-global {
+    position:relative;
+    width: 100%;
+    display: block;
+    z-index: 100001;
+    background: #efefef;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.u-nav-global-nav {
+    display:block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+@media all and (min-width: 960px) {
+    .u-nav-global-nav {
+        width: 984px;
+    }
+    .u-nav-global-nav > ul > li:first-child a {
+        margin-left:0;
+    }
+}
+.u-nav-global-nav:before,
+.u-nav-global-nav:after {
+    content: ' ';
+    display:table;
+}
+.u-nav-global-nav:after {
+    clear:both;
+}
+.u-nav-global a {
+    display:block;
+    border-top: 2px solid transparent;
+    margin:0 10px;
+    padding: 3px 0 5px;
+    outline:none;
+}
+a.u-nav-global-active {
+    border-top: 2px solid #dd4814;
+}
+.u-nav-global a:link, .u-nav-global a:visited {
+    color: #333;
+    outline: none;
+    text-decoration: none;
+}
+.u-nav-global a:hover {
+    color: #dd4814;
+}
+.u-nav-global ul {
+    margin:0;
+    padding:0;
+}
+.u-nav-global li {
+    list-style:none;
+    margin:0;
+    padding:0;
+    float:left;
+    display:block;
+}
+.u-nav-global ul ul {
+    display:none;
+    background:white;
+    position:absolute;
+    padding:2px 0 4px;
+    top:29px;
+    left:0;
+    border-top:1px solid #d7d7d7;
+    min-width:120px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    z-index:1;
+}
+.u-nav-global .u-nav-global-show ul {
+    display:block;
+}
+.u-nav-global ul ul li {
+    float:none;
+}
+.u-nav-global ul ul li a {
+    background: none;
+}
+.u-nav-global-more {
+    min-width:120px;
+    position: relative;
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+}
+.u-nav-global-more.u-nav-global-show {
+    background-color: white;
+    border-left:1px solid #d7d7d7;
+    border-right:1px solid #d7d7d7;
+}
+.u-nav-global-more.u-nav-global-show > a {
+    color: #dd4814;
+}
+.u-nav-global-more a.u-nav-global-active {
+    border-top-color: transparent;
+}
+.u-nav-global-more a i {
+    font-style:normal;
+    display:inline-block;
+    position:relative;
+    top:0;
+    left:6px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+%Öv%öÙ           X3$="«X3&   –    :https://apps.ubuntu.com/cat/combo/?light/css/reset.css&light/css/styles.css&light/css/forms.css&css/webcatalog.css&css/one-global-navigation-core.css security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAUJMIIFBTCCA+2gAwIBAgIQCzHehzbEc+ciRSKPKXjwbTANBgkqhkiG9w0BAQsFADBNMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMScwJQYDVQQDEx5EaWdpQ2VydCBTSEEyIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMTYwNTMwMDAwMDAwWhcNMTcwNzA3MTIwMDAwWjBWMQswCQYDVQQGEwJHQjEPMA0GA1UEBxMGTG9uZG9uMRwwGgYDVQQKExNDYW5vbmljYWwgR3JvdXAgTHRkMRgwFgYDVQQDEw9hcHBzLnVidW50dS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCkSMqc9BhzuuKPwbKb+wJkYQli+VaUDqQbqdPX8hrSOffgGpicu4Eqgwva7hTlMA+q9NtSX0esr6NPGDx76aVgbWMojE0KV21flHfQaY7j5nIJUP+KHc52XVdSnya5IxJi1veDA381Xh3Vmkj4NXaQmheqEkanJP7z8v31CVBPRS5OO/T1nsCfqPDHOe6R1i6eOSWiBXgqzOi/3YIa6zNTv5LolZNybL33LMFsO15bMW/gw3tYVd3u2NGr/O1PabTi9Ri1ohKqNJH0UQYY9voC/RvYr2dKzgAlKdcTkEvA3fY7FXxwxcu/1PBt/m/gz8trAOwd7yY9s0O53tEQz4BnAgMBAAGjggHWMIIB0jAfBgNVHSMEGDAWgBQPgGEcgjFh1S8o541GOLQs4cbZ4jAdBgNVHQ4EFgQUtiffJ1XezGDpcnC/snXl91KQHjEwGgYDVR0RBBMwEYIPYXBwcy51YnVudHUuY29tMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwawYDVR0fBGQwYjAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL3NzY2Etc2hhMi1nNS5jcmwwL6AtoCuGKWh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9zc2NhLXNoYTItZzUuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMHwGCCsGAQUFBwEBBHAwbjAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMEYGCCsGAQUFBzAChjpodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRTSEEyU2VjdXJlU2VydmVyQ0EuY3J0MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAA2VDnKEn98V7Iz6ZhuXyNOV3iZfRotxEGBuS7cuGQMLgcn/GvnkIMZ/KfhOUhUacjJq+J7NHnxCdzsAiQPXmS/kWWj/AIIdS0t2tcmmiWNWQbmeyWD8qOR7AWTHYaz3prZ0ggjDZboAV2+u/qM9KObmDVvOJJirrvakVKep46PnDimycypmAe7P4Rpq4QH1TLU/6bKwB382KizjZIPoA8C6nLQSP5jH77eHegv0llpRSnhgb5m/Di0Xix1XF1FnnnScz6Utd+80rFdQTHeEoyb2V7YqaIOExx0g1sdKRhYjWLmmt8WCwU0TBdKcT8N/05+7v61bTITH7qW5e0iNGVnALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 21 Nov 2016 16:41:16 GMT
+Server: Apache
+Etag: "0f20c2553ec61e1e82fa8ad54efe39f4"
+Expires: Mon, 21 Nov 2016 16:51:16 GMT
+Cache-Control: max-age=600
+Last-Modified: Mon, 21 Nov 2016 16:41:16 GMT
+Content-Length: 19334
+Content-Type: text/css
+Age: 115
+X-Cache: HIT from papeda.canonical.com
+X-Cache-Lookup: HIT from papeda.canonical.com:3128
+Via: 1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)
+Strict-Transport-Security: max-age=2592000
+ uncompressed-len 0   K†

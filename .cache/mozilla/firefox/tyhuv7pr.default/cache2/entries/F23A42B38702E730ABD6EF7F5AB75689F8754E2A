@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":53,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+  <title>Git - Cơ Bản về Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-2af57cba20af7a67341d32a2f18445b2.css" />
+  <script src="/assets/modernizr-10d8d48497292341fc1c4a63d06c6f61.js"></script>
+<script src="/assets/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+
+</header>
+
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr/v2">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u">Bắt Đầu</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-V%E1%BB%81-Qu%E1%BA%A3n-L%C3%BD-Phi%C3%AAn-B%E1%BA%A3n">Về Quản Lý Phiên Bản</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-S%C6%A1-L%C6%B0%E1%BB%A3c-L%E1%BB%8Bch-S%E1%BB%AD-c%E1%BB%A7a-Git">Sơ Lược Lịch Sử của Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%C6%A1-B%E1%BA%A3n-v%E1%BB%81-Git">Cơ Bản về Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%C3%A0i-%C4%90%E1%BA%B7t-Git">Cài Đặt Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%E1%BA%A5u-H%C3%ACnh-Git-L%E1%BA%A7n-%C4%90%E1%BA%A7u">Cấu Hình Git Lần Đầu</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-Tr%E1%BB%A3-Gi%C3%BAp">Trợ Giúp</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-T%C3%B3m-T%E1%BA%AFt">Tóm Tắt</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>2. <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git">Cơ Bản Về Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-T%E1%BA%A1o-M%E1%BB%99t-Kho-Ch%E1%BB%A9a-Git">Tạo Một Kho Chứa Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-Ghi-L%E1%BA%A1i-Thay-%C4%90%E1%BB%95i-v%C3%A0o-Kho-Ch%E1%BB%A9a">Ghi Lại Thay Đổi vào Kho Chứa</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-Xem-L%E1%BB%8Bch-S%E1%BB%AD-Commit">Xem Lịch Sử Commit</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-Ph%E1%BB%A5c-H%E1%BB%93i">Phục Hồi</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-L%C3%A0m-Vi%E1%BB%87c-T%E1%BB%AB-Xa">Làm Việc Từ Xa</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-%C4%90%C3%A1nh-D%E1%BA%A5u">Đánh Dấu</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-M%E1%BA%B9o-Nh%E1%BB%8F">Mẹo Nhỏ</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/vi/v1/C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Git-T%E1%BB%95ng-K%E1%BA%BFt">Tổng Kết</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>3. <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git">Phân Nhánh Trong Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-Nh%C3%A1nh-L%C3%A0-G%C3%AC%3F">Nhánh Là Gì?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-C%C6%A1-B%E1%BA%A3n-V%E1%BB%81-Ph%C3%A2n-Nh%C3%A1nh-v%C3%A0-T%C3%ADch-H%E1%BB%A3p">Cơ Bản Về Phân Nhánh và Tích Hợp</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-Qu%E1%BA%A3n-L%C3%BD-C%C3%A1c-Nh%C3%A1nh">Quản Lý Các Nhánh</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-Quy-Tr%C3%ACnh-L%C3%A0m-Vi%E1%BB%87c-Ph%C3%A2n-Nh%C3%A1nh">Quy Trình Làm Việc Phân Nhánh</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-Nh%C3%A1nh-Remote">Nhánh Remote</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/vi/v1/Ph%C3%A2n-Nh%C3%A1nh-Trong-Git-T%E1%BB%95ng-K%E1%BA%BFt">Tổng Kết</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>1.3 Bắt Đầu - Cơ Bản về Git</h1>
+  <div><h2>Cơ Bản về Git</h2>
+
+<p>Tóm lại thì, Git là gì? Đây là một phần quan trọng để tiếp thu, bởi vì nếu bạn hiểu được Git là gì và các nguyên tắc cơ bản của việc Git hoạt động như thế nào, thì sử dụng Git một cách hiệu quả sẽ trở nên dễ dàng hơn cho bạn rất nhiều. Khi học Git, hãy cố gắng gạt bỏ những kiến thức mà có thể bạn đã biết về các VCS khác, ví dụ như Subversion và Perforce; việc này sẽ giúp bạn tránh được sự hỗn độn, bối rối khi sử dụng nó. Git &quot;nghĩ&quot; về thông tin và lưu trữ nó khá khác biệt so với các hệ thống khác, mặc dù giao diện người dùng tương đối giống nhau; hiểu được những khác biệt đó sẽ giúp bạn tránh được rất nhiều bối rối.</p>
+
+<h3 id="Ảnh-Chụp,-Không-Phải-Sự-Khác-Biệt"><a href="#Ảnh-Chụp,-Không-Phải-Sự-Khác-Biệt">Ảnh Chụp, Không Phải Sự Khác Biệt</a></h3>
+
+<p>Sự khác nhau cơ bản giữa Git với bất kỳ VCS nào khác (bao gồm Subversion và tương tự là cách Git &quot;nghĩ&quot; về dữ liệu. Về mặt lý thuyết mà nói, phần lớn hệ thống khác lưu trữ thông tin dưới dạng danh sách các tập tin được thay đổi. Các hệ thống này (CVS, Subversion, Perforce, Bazaar,...) coi thông tin được lưu trữ như là một tập hợp các tập tin và các thay đổi được thực hiện trên mỗi tập tin theo thời gian, được minh hoạ trong hình 1-4.</p>
+
+<p><center><img src="/figures/18333fig0104-tn.png"></center><br/>
+Hình 1-4. Các hệ thống khác hướng tới lưu trữ tập tin dưới dạng các thay đổi so với bản cơ sở của mỗi tập tin.</p>
+
+<p>Git không nghĩ hoặc xử lý dữ liệu theo cách này. Mà thay vào đó Git coi dữ liệu của nó giống như một tập hợp các &quot;ảnh&quot; (snapshot) của một hệ thống tập tin nhỏ. Mỗi lần bạn &quot;commit&quot;, hoặc lưu lại trạng thái hiện tại của dự án trong Git, về cơ bản Git &quot;chụp một bức ảnh&quot; ghi lại nội dung của tất cả các tập tin tại thời điểm đó và tạo ra một tham chiếu tới &quot;ảnh&quot; đó. Để hiệu quả hơn, nếu như tập tin không có sự thay đổi nào, Git không lưu trữ tập tin đó lại một lần nữa mà chỉ tạo một liên kết tới tập tin gốc đã tồn tại trước đó. Git thao tác với dữ liệu giống như Hình 1-5.</p>
+
+<p><center><img src="/figures/18333fig0105-tn.png"></center><br/>
+Hình 1-5. Git lưu trữ dữ liệu dưới dạng ảnh chụp của dự án theo thời gian.</p>
+
+<p>Đây là sự khác biệt lớn nhất giữa Git và hầu hết các VCS khác. Nó khiến Git cân nhắc lại hầu hết các khía cạnh của quản lý phiên bản mà phần lớn các hệ thống khác chỉ áp dụng lại từ các thế hệ trước. Chính lý do này làm cho Git giống như một hệ thống quản lý tập tin thu nhỏ với các tính năng, công cụ vô cùng mạnh mẽ được xây dựng dựa trên nó, không  chỉ là một hệ thống quản lý phiên bản đơn giản. Chúng ta sẽ khám phá một số lợi ích đạt được từ việc quản lý dữ liệu theo cách này khi bàn luận về Phân nhánh trong Git ở Chương 3.</p>
+
+<h3 id="Phần-Lớn-Thao-Tác-Diễn-Ra-Cục-Bộ"><a href="#Phần-Lớn-Thao-Tác-Diễn-Ra-Cục-Bộ">Phần Lớn Thao Tác Diễn Ra Cục Bộ</a></h3>
+
+<p>Phần lớn các thao tác/hoạt động trong Git chỉ cần yêu cầu các tập tin hay tài nguyên cục bộ - thông thường nó sẽ không cần bất cứ thông tin từ máy tính nào khác trong mạng lưới của bạn. Nếu như bạn quen với việc sử dụng các hệ thống quản lý phiên bản tập trung nơi mà đa số hoạt động đều chịu sự ảnh hưởng bởi độ trễ của mạng, thì với Git đó lại là một thế mạnh. Bởi vì toàn bộ dự án hoàn toàn nằm trên ổ cứng của bạn, các thao tác được thực hiện gần như ngay lập tức. </p>
+
+<p>Ví dụ, khi bạn muốn xem lịch sử của dự án, Git không cần phải lấy thông tin đó từ một máy chủ khác để hiển thị, mà đơn giản nó được đọc trực tiếp từ chính cơ sở dữ liệu cục bộ của bạn. Điều này có nghĩa là bạn có thể xem được lịch sử thay đổi của dự án gần như ngay lập tức. Nếu như bạn muốn so sánh sự thay đổi giữa phiên bản hiện tại của một tập tin với phiên bản của một tháng trước, Git có thể tìm kiếm tập tin cũ đó trên máy cục bộ rồi sau đó so sánh sự khác biệt cho bạn. Thay vì việc phải truy vấn từ xa hoặc &quot;kéo về&quot; (pull) phiên bản cũ của tập tin đó từ máy chủ trung tâm rồi mới thực hiện so sánh cục bộ.</p>
+
+<p>Điều này còn đồng nghĩa với có rất ít việc mà bạn không thể làm được khi không có kết nối Internet hoặc VPN bị ngắt. Nếu bạn muốn làm việc ngay cả khi ở trên máy bay hoặc trên tầu, bạn vẫn có thể commit bình thường cho tới khi có kết nối Internet để đồng bộ hoá. Nếu bạn đang ở nhà mà VPN lại không thể kết nối được, bạn cũng vẫn có thể làm việc bình thường. Trong rất nhiều hệ thống khác, việc này gần như là không thể hoặc rất khó khăn. Ví dụ trong Perforce, bạn gần như không thể làm gì nếu như không kết nối được tới máy chủ; trong Subversion và CVS, bạn có thể sửa tập tin nhưng bạn không thể commit các thay đổi đó vào cơ sở dữ liệu (vì cơ sở dữ liệu của bạn không được kết nối). Đây có thể không phải là điều gì đó lớn lao, nhưng bạn sẽ ngạc nhiên về sự thay đổi lớn mà nó có thể làm được.</p>
+
+<h3 id="Git-Mang-Tính-Toàn-Vẹn"><a href="#Git-Mang-Tính-Toàn-Vẹn">Git Mang Tính Toàn Vẹn</a></h3>
+
+<p>Mọi thứ trong Git được &quot;băm&quot; (checksum or hash) trước khi lưu trữ và được tham chiếu tới bằng mã băm đó. Có nghĩa là việc thay đổi nội dung của một tập tin hay một thư mục mà Git không biết tới là điều không thể. Chức năng này được xây dựng trong Git ở tầng thấp nhất và về mặt triết học được coi là toàn vẹn. Bạn không thể mất thông tin/dữ liệu trong khi truyền tải hoặc nhận về một tập tin bị hỏng mà Git không phát hiện ra. </p>
+
+<p>Cơ chế mà Git sử dụng cho việc băm này được gọi là mã băm SHA-1. Đây là một chuỗi được tạo thành bởi 40 ký tự của hệ cơ số 16 (0-9 và a-f) và được tính toán dựa trên nội dung của tập tin hoặc cấu trúc thư mục trong Git. Một mã băm SHA-1 có định dạng như sau:</p>
+
+<pre><code>24b9da6552252987aa493b52f8696cd6d3b00373
+</code></pre>
+
+<p>Bạn sẽ thấy các mã băm được sử dụng ở mọi nơi trong Git. Thực tế, Git không sử dụng tên của các tập để lưu trữ mà bằng các mã băm từ nội dung của tập tin vào một cơ sở dữ liệu có thể truy vấn được.</p>
+
+<h3 id="Git-Chỉ-Thêm-Mới-Dữ-Liệu"><a href="#Git-Chỉ-Thêm-Mới-Dữ-Liệu">Git Chỉ Thêm Mới Dữ Liệu</a></h3>
+
+<p>Khi bạn thực hiện các hành động trong Git, phần lớn tất cả hành động đó đều được thêm vào cơ sở dữ liệu của Git. Rất khó để yêu cầu hệ thống thực hiện một hành động nào đó mà không thể khôi phục lại được hoặc xoá dữ liệu đi dưới mọi hình thức. Giống như trong các VCS khác, bạn có thể mất hoặc làm rối tung dữ liệu mà bạn chưa commit; nhưng khi bạn đã commit thì rất khó để mất các dữ liệu đó, đặc biệt là nếu bạn thường xuyên đẩy (push) cơ sở dữ liệu sang một kho chứa khác.</p>
+
+<p>Điều này khiến việc sử dụng Git trở nên thích thú bởi vì chúng ta biết rằng chúng ta có thể thử nghiệm mà không lo sợ sẽ phá hỏng mọi thứ. Để có thể hiểu sâu hơn việc Git lưu trữ dữ liệu như thế nào hay làm sao để khôi phục lại dữ liệu có thể đã mất, xem Chương 9.</p>
+
+<h3 id="Ba-Trạng-Thái"><a href="#Ba-Trạng-Thái">Ba Trạng Thái</a></h3>
+
+<p>Bây giờ, hãy chú ý. Đây là điều quan trọng cần ghi nhớ về Git nếu như bạn muốn hiểu được những phần tiếp theo một cách trôi chảy. Mỗi tập tin trong Git được quản lý dựa trên ba trạng thái: committed, modified, và staged. Committed có nghĩa là dữ liệu đã được lưu trữ một cách an toàn trong cơ sở dữ liệu. Modified có nghĩa là bạn đã thay đổi tập tin nhưng chưa commit vào cơ sở dữ liệu. Và staged là bạn đã đánh dấu sẽ commit phiên bản hiện tại của một tập tin đã chỉnh sửa trong lần commit sắp tới.</p>
+
+<p>Điều này tạo ra ba phần riêng biệt của một dự án sử dụng Git: thư mục Git, thư mục làm việc, và khu vực tổ chức (staging area).</p>
+
+<p><center><img src="/figures/18333fig0106-tn.png"></center><br/>
+Hình 1-6. Thư mục làm việc, khu vực khán đài, và thư mục Git.</p>
+
+<p>Thư mục Git là nơi Git lưu trữ các &quot;siêu dữ kiện&quot; (metadata) và cơ sở dữ liệu cho dự án của bạn. Đây là phần quan trọng nhất của Git, nó là phần được sao lưu về khi bạn tạo một bản sao (clone) của một kho chứa từ một máy tính khác.</p>
+
+<p>Thư mục làm việc là bản sao một phiên bản của dự án. Những tập tin này được kéo về (pulled) từ cơ sở dữ liệu được nén lại trong thư mục Git và lưu trên ổ cứng cho bạn sử dụng hoặc chỉnh sửa.</p>
+
+<p>Khu vực khán đài là một tập tin đơn giản được chứa trong thư mục Git, nó chứa thông tin về những gì sẽ được commit trong lần commit sắp tới. Nó còn được biết đến với cái tên &quot;chỉ mục&quot; (index), nhưng khu vực tổ chức (staging area) đang dần được coi là tên tiêu chuẩn.</p>
+
+<p>Tiến trình công việc (workflow) cơ bản của Git:</p>
+
+<ol>
+<li>Bạn thay đổi các tập tin trong thư mục làm việc.</li>
+<li>Bạn tổ chức các tập tin, tạo mới ảnh của các tập tin đó vào khu vực tổ chức.</li>
+<li>Bạn commit, ảnh của các tập tin trong khu vực tổ chức sẽ được lưu trữ vĩnh viễn vào thư mục Git.</li>
+</ol>
+
+<p>Nếu một phiên bản nào đó của một tập tin ở trong thư mục Git, nó được coi là đã commit. Nếu như nó đã được sửa và thêm vào khu vực tổ chức, nghĩa là nó đã được staged. Và nếu nó được thay đổi từ khi checkout nhưng chưa được staged, nó được coi là đã thay đổi. Trong Chương 2, bạn sẽ được tìm hiểu kỹ hơn về những trạng thái này cũng như làm thế nào để tận dụng lợi thế của chúng hoặc bỏ qua hoàn toàn giai đoạn tổ chức (staged).</p>
+
+<div id="nav"><a href="/book/vi/B%E1%BA%AFt-%C4%90%E1%BA%A7u-S%C6%A1-L%C6%B0%E1%BB%A3c-L%E1%BB%8Bch-S%E1%BB%AD-c%E1%BB%A7a-Git">prev</a> | <a href="/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%C3%A0i-%C4%90%E1%BA%B7t-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js"></script>
+<script src="/assets/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js"></script>
+<script src="/assets/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js"></script>
+<script src="/assets/site-1dedb2e04243f2cda0b571c1ade66561.js"></script>
+
+    </div>
+
+</body>
+</html>
+��SN[      X3��X3��=#�       _    :https://git-scm.com/book/vi/v1/B%E1%BA%AFt-%C4%90%E1%BA%A7u-C%C6%A1-B%E1%BA%A3n-v%E1%BB%81-Git necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAdVMIIHUTCCBjmgAwIBAgIQA2X56m/qgVPwPe3xZp9umTANBgkqhkiG9w0BAQsFADBwMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMS8wLQYDVQQDEyZEaWdpQ2VydCBTSEEyIEhpZ2ggQXNzdXJhbmNlIFNlcnZlciBDQTAeFw0xNjA0MjMwMDAwMDBaFw0xOTA1MDExMjAwMDBaMGcxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMRUwEwYDVQQKEwxHaXRIdWIsIEluYy4xFDASBgNVBAMTC2dpdC1zY20uY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA56oyWDcnct5dTeefANI+rdvFenaDGV0l8PQjYV8eIxK/eBZh3zRzDr7poljkEu+KQRj7uaChOuTy7qsCOBVjrTTyVkymca51uwDFynenhAnwvC8GQSUow57WKJATzSNQ04OkdfkP3OOgk7VJcVjXYNwhiB61zbdegh1TkFUlw9n8n+mXu28/KtWTKWwduDvMLAl19zUvthptUR0BLYzDdue5ZeuB35JGXXbOok9sKCSy6tkvGzxTZ0KJgrDXsVu9pgvjcpen7kuSnl0rzWsu1L7rQqVl3b0c52nR8txr5yDtwIahggPQqmZJlphmhdRI2kccTHVAjfuCNIQFXeZdyQIDAQABo4ID7jCCA+owHwYDVR0jBBgwFoAUUWj/kK8CB3U8zNllZGKiErhZcjswHQYDVR0OBBYEFGBoebSWGQ+gOojWZZ75lnt2r4cFMCcGA1UdEQQgMB6CC2dpdC1zY20uY29tgg93d3cuZ2l0LXNjbS5jb20wDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjB1BgNVHR8EbjBsMDSgMqAwhi5odHRwOi8vY3JsMy5kaWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzUuY3JsMDSgMqAwhi5odHRwOi8vY3JsNC5kaWdpY2VydC5jb20vc2hhMi1oYS1zZXJ2ZXItZzUuY3JsMEwGA1UdIARFMEMwNwYJYIZIAYb9bAEBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQICMIGDBggrBgEFBQcBAQR3MHUwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBNBggrBgEFBQcwAoZBaHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0U0hBMkhpZ2hBc3N1cmFuY2VTZXJ2ZXJDQS5jcnQwDAYDVR0TAQH/BAIwADCCAfUGCisGAQQB1nkCBAIEggHlBIIB4QHfAHUApLkJkLQYWBSHuxOizGdwCjw1mAT5G9+443fNDsgN3BAAAAFYEr8S/AAABAMARjBEAiAnl3vK/+u/s6SIUs8++a6qqq+bAUjwc9ppXrqILZqKvwIgBLoO3fibnad8+110J14+G1wp+MVJuDE1No8mtlpFD6UAdwBo9pj4H2SCvjqM7rkoHUz8cVFdZ5PURNEKZ6y7T0/7xAAAAVgSvxLKAAAEAwBIMEYCIQD5855Kv8e7cGcDIzFiyhDArx4+1joeG9yuVVVgJ7QiuAIhAIfPjMycmInkgIpiVDq59STr1d5Bw+qQA7/dnykaIi5NAHYAVhQGmi/XwuzT9eG9RLI+x0Z2ubyZEVzA75SYVdaJ0N0AAAFYEr8TUwAABAMARzBFAiEAzjbujBj06tVpsVDJpNhnuf3wL2b43ERIVFQD9sq0W3MCICzJ4kaAJ/62ZOdk2wWiU3x7xs+A1iU9Xb4/FuRNHwzAAHUA7ku9t3XOYLrhQmkfq+GeZqMPfl+wctiDAMR7iXqo/csAAAFYEr8VfAAABAMARjBEAiBbDhrGWHOVTymcGlsFlHi9W29p6BmsXoJU9KLflEHbMwIgQiBWptNCzVca1UxMQhOyiA7PMMH9nKPfh6JDpC4ZmjAwDQYJKoZIhvcNAQELBQADggEBADKTNSFChGJweL6ZqGLR7iWq/AclJUTKc2Cv1nemBz7UQgX/j/6GZ/ZmlahENSqEae1J0NoQhC/4BpXd0eBOfAxAEjZAhWL1QcfKEYmJg5/ydTWTcH4fjz+4xgH3Ug8STPxqqNVCmB0MpJHUkXj04pVbvqN4LJ/LFaDM21Hf0ZJQiRmcAiXl7ckZnotxjuvqgtn6x8+rq6JRKwjjhwY+tNF+aN/GH/SBrOAuPpV3rm7THbQD/YXiSW5ZiXY2comW9H4W+Bdux97SQiqFPMMK/cnF8vbyZ3sPANzkJVTMu7W2v5A/Q3EBJ0Zm2g3v/jkTOy7NiVO/lXbdfW6IiFLDxXnALwADAAAAAAEBAAA= request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Tue, 22 Nov 2016 03:34:51 GMT
+status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 26409
+Etag: W/"5de0bb7527c9d19b30f6dd0e80740bed"
+Cache-Control: max-age=0, private, must-revalidate
+x-request-id: eb85f804-c99b-44bc-bbef-3d930facb998
+x-runtime: 0.053304
+Strict-Transport-Security: max-age=31536000
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 20 predictor::https://git-scm.com/assets/git-scm-2af57cba20af7a67341d32a2f18445b2.css 1,1,1479785689,0 predictor::https://git-scm.com/assets/modernizr-10d8d48497292341fc1c4a63d06c6f61.js 1,1,1479785689,0 predictor::https://git-scm.com/assets/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js 1,1,1479785689,0 predictor::https://use.typekit.com/jsq2fql.js 1,1,1479785689,0 predictor::https://git-scm.com/images/logo@2x.png 1,1,1479785689,0 predictor::https://git-scm.com/figures/18333fig0104-tn.png 1,1,1479785689,0 predictor::https://git-scm.com/figures/18333fig0105-tn.png 1,1,1479785689,0 predictor::https://git-scm.com/figures/18333fig0106-tn.png 1,1,1479785689,0 predictor::https://git-scm.com/assets/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js 1,1,1479785689,0 predictor::https://git-scm.com/assets/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js 1,1,1479785689,0 predictor::https://git-scm.com/assets/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js 1,1,1479785689,0 predictor::https://git-scm.com/assets/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js 1,1,1479785689,0 predictor::https://git-scm.com/assets/site-1dedb2e04243f2cda0b571c1ade66561.js 1,1,1479785689,0 predictor::https://git-scm.com/images/bg/body.jpg 1,1,1479785689,0 predictor::https://git-scm.com/images/icons/search.png 1,1,1479785689,0 predictor::https://git-scm.com/images/sidebar-divider.png 1,1,1479785689,0 predictor::https://git-scm.com/images/icons/code.png 1,1,1479785689,0 predictor::https://www.google.com/jsapi?callback=gloader_ready 1,1,1479785689,0 predictor::https://secure.gaug.es/track.js 1,1,1479785689,0 predictor::https://js-agent.newrelic.com/nr-998.min.js 1,1,1479785689,0   g)

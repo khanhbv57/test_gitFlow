@@ -1,0 +1,19 @@
+logrotate state -- version 2
+"/home/khanh/.cache/upstart/dbus.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/bamfdaemon.log" 2016-11-22-1:22:7
+"/home/khanh/.cache/upstart/update-notifier-crash-_var_crash__sbin_plymouthd.0.crash.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/unity7.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/indicator-keyboard.log" 2016-11-22-16:26:58
+"/home/khanh/.cache/upstart/window-stack-bridge.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/at-spi2-registryd.log" 2016-11-22-1:22:7
+"/home/khanh/.cache/upstart/unity-panel-service-lockscreen.log" 2016-11-22-1:22:6
+"/home/khanh/.cache/upstart/hud.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/indicator-sound.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/update-notifier-release.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/indicator-session.log" 2016-11-22-1:22:14
+"/home/khanh/.cache/upstart/upstart-event-bridge.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/ssh-agent.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/gnome-keyring-ssh.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/unity-settings-daemon.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/gpg-agent.log" 2016-11-22-9:59:11
+"/home/khanh/.cache/upstart/unity-panel-service.log" 2016-11-22-9:59:11
